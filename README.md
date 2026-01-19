@@ -514,18 +514,8 @@ Todos los modelos usan `random_state=42` para reproducibilidad.
 
 ---
 
-## 📄 Licencia
-
-MIT License
-
----
-
 ## 🙏 Créditos
 
 - **Dataset**: [Kaggle - Sales Order Dataset](https://www.kaggle.com/datasets/datawitharyan/sales-order-dataset) by DataWithAryan
 - **Metodología**: Ralph Wiggum Protocol (Agentes Autónomos)
 - **Generado**: Enero 2026
-
----
-
-*Este proyecto fue ejecutado por agentes autónomos de IA que iteraron hasta alcanzar los objetivos, detectaron problemas (leakage), y los corrigieron sin intervención humana en la fase de ejecución.*
