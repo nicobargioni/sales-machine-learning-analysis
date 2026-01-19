@@ -1,0 +1,14 @@
+{
+  "best_model": "LGBMRegressor",
+  "best_params": {
+    "regressor__num_leaves": 31,
+    "regressor__n_estimators": 300,
+    "regressor__learning_rate": 0.01,
+    "regressor__feature_fraction": 1.0
+  },
+  "best_rmse": 73.75618138189654,
+  "best_r2": 0.4275067600141812,
+  "n_samples": 9994,
+  "n_features": 16,
+  "timestamp": "2026-01-18T13:52:07.907178"
+}

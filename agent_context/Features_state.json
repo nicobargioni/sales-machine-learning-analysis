@@ -1,0 +1,77 @@
+{
+  "agent": "Features",
+  "status": "completed",
+  "last_run": "2026-01-18T13:45:27.048799",
+  "datasets_generated": [
+    "base",
+    "regressor",
+    "classifier",
+    "forecaster",
+    "segmenter"
+  ],
+  "stats": {
+    "base": {
+      "rows": 9994,
+      "cols": 27
+    },
+    "regressor": {
+      "rows": 9994,
+      "cols": 19
+    },
+    "classifier": {
+      "rows": 9994,
+      "cols": 20
+    },
+    "forecaster": {
+      "rows": 48,
+      "cols": 14
+    },
+    "segmenter": {
+      "rows": 793,
+      "cols": 14
+    }
+  },
+  "outputs": {
+    "base": "output/features_base.csv",
+    "regressor": "output/features_regressor.csv",
+    "classifier": "output/features_classifier.csv",
+    "forecaster": "output/features_forecaster.csv",
+    "segmenter": "output/features_segmenter.csv",
+    "metadata": "output/features_metadata.json"
+  },
+  "features_created": {
+    "base": [
+      "ship_days",
+      "order_month",
+      "order_quarter",
+      "order_dayofweek",
+      "order_year",
+      "order_day"
+    ],
+    "regressor": [
+      "margin_potential"
+    ],
+    "classifier": [
+      "is_profitable",
+      "high_discount",
+      "is_standard_shipping"
+    ],
+    "forecaster": [
+      "sales_lag_1",
+      "sales_lag_2",
+      "sales_lag_3",
+      "sales_rolling_mean_3",
+      "sales_rolling_mean_6",
+      "sales_rolling_std_3"
+    ],
+    "segmenter": [
+      "recency",
+      "frequency",
+      "monetary",
+      "avg_order_value",
+      "avg_profit",
+      "days_as_customer",
+      "avg_quantity"
+    ]
+  }
+}

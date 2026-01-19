@@ -1,0 +1,38 @@
+{
+  "agent": "ProfitRegressor",
+  "status": "completed",
+  "started_at": "2026-01-18T00:00:00Z",
+  "current_phase": "completed",
+  "models_trained": [
+    "LinearRegression",
+    "Ridge",
+    "RandomForest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "best_model": "LightGBM",
+  "best_rmse": 73.76,
+  "best_r2": 0.4275,
+  "iterations": 2,
+  "errors_encountered": [],
+  "last_update": "2026-01-18T13:52:07.908144",
+  "completed_at": "2026-01-18T13:52:07.908240",
+  "criteria_met": {
+    "rmse_below_200": true,
+    "rmse_below_150": true,
+    "r2_above_0.3": true,
+    "r2_above_0.5": false
+  },
+  "outputs": {
+    "model": "output/profit_regressor_best_model.pkl",
+    "results": "output/profit_regressor_results.csv",
+    "feature_importance": "output/profit_regressor_feature_importance.png",
+    "metadata": "output/profit_regressor_metadata.json",
+    "report": "docs/profit_regressor_report.md"
+  },
+  "optimizations_applied": [
+    "Winsorizing target (percentil 1-99)",
+    "RandomizedSearchCV con 20 iteraciones"
+  ],
+  "notes": "Sin Sales como feature por leakage. Winsorizing fue clave para mejorar metricas de $208 RMSE a $73.76 RMSE."
+}

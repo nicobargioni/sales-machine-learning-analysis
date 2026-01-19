@@ -1,0 +1,63 @@
+{
+  "agent": "ProfitabilityClassifier",
+  "status": "completed",
+  "started_at": "2026-01-18T13:47:00Z",
+  "finished_at": "2026-01-18T13:49:39Z",
+  "current_phase": "finished",
+  "progress": {
+    "data_loaded": true,
+    "preprocessing_done": true,
+    "models_trained": {
+      "Logistic Regression": {
+        "f1_mean": 0.9433,
+        "roc_auc_mean": 0.9493,
+        "accuracy_mean": 0.9097
+      },
+      "Random Forest": {
+        "f1_mean": 0.9648,
+        "roc_auc_mean": 0.9796,
+        "accuracy_mean": 0.9426
+      },
+      "XGBoost": {
+        "f1_mean": 0.9551,
+        "roc_auc_mean": 0.9816,
+        "accuracy_mean": 0.9291
+      },
+      "LightGBM": {
+        "f1_mean": 0.9586,
+        "roc_auc_mean": 0.9810,
+        "accuracy_mean": 0.9341
+      },
+      "Random Forest (Optimized)": {
+        "f1_mean": 0.9665,
+        "roc_auc_mean": 0.9791,
+        "accuracy_mean": 0.9451
+      }
+    },
+    "best_model": "Random Forest (Optimized)",
+    "metrics": {
+      "f1_score": 0.9665,
+      "roc_auc": 0.9791,
+      "accuracy": 0.9451,
+      "precision": 0.9518,
+      "recall": 0.9816
+    },
+    "objectives_met": {
+      "f1_minimum": true,
+      "f1_optimal": true,
+      "roc_auc_minimum": true,
+      "roc_auc_optimal": true
+    }
+  },
+  "outputs": {
+    "model": "output/profitability_classifier_best_model.pkl",
+    "results_csv": "output/profitability_classifier_results.csv",
+    "confusion_matrix": "output/profitability_confusion_matrix.png",
+    "roc_curve": "output/profitability_roc_curve.png",
+    "feature_importance": "output/profitability_feature_importance.png",
+    "model_comparison": "output/profitability_model_comparison.png",
+    "report": "docs/profitability_classifier_report.md"
+  },
+  "errors": [],
+  "last_checkpoint": "2026-01-18T13:49:39Z"
+}

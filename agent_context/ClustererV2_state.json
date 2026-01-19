@@ -1,0 +1,43 @@
+{
+  "agent": "ClustererV2",
+  "status": "completed",
+  "started_at": "2026-01-19T12:00:00Z",
+  "finished_at": "2026-01-19T12:30:00Z",
+  "current_phase": "finished",
+  "objective": "Generar 4-5 segmentos accionables con Silhouette > 0.25",
+  "result": "SUCCESS",
+  "metrics": {
+    "best_k": 5,
+    "silhouette": 0.2513,
+    "davies_bouldin": 1.1722,
+    "calinski_harabasz": 287.69,
+    "min_cluster_pct": 7.7,
+    "clusters_found": 5
+  },
+  "segments": {
+    "Low Value": {"n": 251, "pct": 31.7},
+    "Lost": {"n": 73, "pct": 9.2},
+    "Hibernating": {"n": 61, "pct": 7.7},
+    "Big Spenders": {"n": 104, "pct": 13.1},
+    "Loyal Customers": {"n": 304, "pct": 38.3}
+  },
+  "comparison_v1": {
+    "v1_model": "DBSCAN",
+    "v1_clusters": 2,
+    "v1_silhouette": 0.51,
+    "v2_model": "KMeans",
+    "v2_clusters": 5,
+    "v2_silhouette": 0.2513,
+    "improvement": "Mayor granularidad para marketing (5 segmentos vs 2)"
+  },
+  "iterations": 30,
+  "last_error": null,
+  "outputs": [
+    "customer_segments_v2.csv",
+    "clusterer_v2_model.pkl",
+    "cluster_profiles_v2.png",
+    "segment_recommendations.md",
+    "clusterer_v2_report.md",
+    "clusterer_v2_results.csv"
+  ]
+}

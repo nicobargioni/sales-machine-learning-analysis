@@ -1,0 +1,140 @@
+{
+  "regressor": {
+    "features": [
+      "Ship Mode",
+      "Segment",
+      "City",
+      "State",
+      "Postal Code",
+      "Region",
+      "Category",
+      "Sub-Category",
+      "Sales",
+      "Quantity",
+      "Discount",
+      "Profit",
+      "ship_days",
+      "order_month",
+      "order_quarter",
+      "order_dayofweek",
+      "order_year",
+      "order_day",
+      "margin_potential"
+    ],
+    "target": "Profit",
+    "categorical": [
+      "Ship Mode",
+      "Segment",
+      "Region",
+      "Category",
+      "Sub-Category",
+      "State",
+      "City"
+    ],
+    "numerical": [
+      "Sales",
+      "Quantity",
+      "Discount",
+      "Postal Code",
+      "ship_days",
+      "order_month",
+      "order_quarter",
+      "order_dayofweek",
+      "order_year",
+      "order_day",
+      "margin_potential"
+    ]
+  },
+  "classifier": {
+    "features": [
+      "Ship Mode",
+      "Segment",
+      "City",
+      "State",
+      "Postal Code",
+      "Region",
+      "Category",
+      "Sub-Category",
+      "Sales",
+      "Quantity",
+      "Discount",
+      "ship_days",
+      "order_month",
+      "order_quarter",
+      "order_dayofweek",
+      "order_year",
+      "order_day",
+      "is_profitable",
+      "high_discount",
+      "is_standard_shipping"
+    ],
+    "target": "is_profitable",
+    "categorical": [
+      "Ship Mode",
+      "Segment",
+      "Region",
+      "Category",
+      "Sub-Category",
+      "State",
+      "City"
+    ],
+    "numerical": [
+      "Sales",
+      "Quantity",
+      "Discount",
+      "Postal Code",
+      "ship_days",
+      "order_month",
+      "order_quarter",
+      "order_dayofweek",
+      "order_year",
+      "order_day",
+      "high_discount",
+      "is_standard_shipping"
+    ]
+  },
+  "forecaster": {
+    "features": [
+      "year_month",
+      "sales",
+      "profit",
+      "quantity",
+      "n_orders",
+      "month",
+      "quarter",
+      "year",
+      "sales_lag_1",
+      "sales_lag_2",
+      "sales_lag_3",
+      "sales_rolling_mean_3",
+      "sales_rolling_mean_6",
+      "sales_rolling_std_3"
+    ],
+    "target": "sales",
+    "date_column": "year_month"
+  },
+  "segmenter": {
+    "features": [
+      "Customer ID",
+      "frequency",
+      "monetary",
+      "total_profit",
+      "total_quantity",
+      "preferred_category",
+      "segment",
+      "region",
+      "state",
+      "recency",
+      "avg_order_value",
+      "avg_profit",
+      "days_as_customer",
+      "avg_quantity"
+    ],
+    "rfm_features": [
+      "recency",
+      "frequency",
+      "monetary"
+    ],
+    "customer_id": "Customer ID"
+  }
+}
